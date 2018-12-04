@@ -10,3 +10,7 @@ property_1 = Property.new({
   'value' => '1000000',
   'sq_footage' => '50000'
   })
+
+property_1.save()
+
+binding.pry 

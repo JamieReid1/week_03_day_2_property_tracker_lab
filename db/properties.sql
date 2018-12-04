@@ -6,5 +6,5 @@ CREATE TABLE properties (
   address VARCHAR(255),
   no_bedrooms INT2,
   value INT4,
-  square_footage INT4
+  sq_footage INT4
 );
