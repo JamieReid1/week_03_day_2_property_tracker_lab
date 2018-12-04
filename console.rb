@@ -11,6 +11,16 @@ property_1 = Property.new({
   'sq_footage' => '50000'
   })
 
-property_1.save()
+property_2 = Property.new({
+  'address' => '1 Abbey Road',
+  'no_bedrooms' => '2',
+  'value' => '500000',
+  'sq_footage' => '20000'
+  })
 
-binding.pry 
+Property.delete_all()
+
+property_1.save()
+property_2.save()
+
+#binding.pry
