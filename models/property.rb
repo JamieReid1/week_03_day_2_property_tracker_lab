@@ -40,6 +40,15 @@ class Property
     db.close()
   end
 
+  def Property.all()
+    db = PG.connect({dbname: 'property_tracker', host: 'localhost'})
+    sql = "SELECT * FROM properties"
+    db.prepare('all', sql)
+    property = db.exec_prepared('all')
+    db.close()
+    return property.map { |property| Property.new(property) }
+  end
+
 
 
 end

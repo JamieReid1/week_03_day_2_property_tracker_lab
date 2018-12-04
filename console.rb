@@ -23,4 +23,7 @@ Property.delete_all()
 property_1.save()
 property_2.save()
 
-#binding.pry
+properties = Property.all()
+
+binding.pry
+nil
